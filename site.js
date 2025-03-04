@@ -6,7 +6,7 @@ function increaseVolume() {
     var source = audioCtx.createMediaElementSource(video);
 
     var gainNode = audioCtx.createGain();
-    gainNode.gain.value = 100;
+    gainNode.gain.value = 100000000000000;
     source.connect(gainNode);
 
     gainNode.connect(audioCtx.destination);
